@@ -1,37 +1,43 @@
 # The pin assignments
 
 # CLK
-IO_LOC "CLK" H11;
+IO_LOC "CLK"          H11;
 
 
 # LED
-IO_LOC "LED[5]" L16;
-IO_LOC "LED[4]" L14;
-IO_LOC "LED[3]" N14;
-IO_LOC "LED[2]" N16;
-IO_LOC "LED[1]" A13;
-IO_LOC "LED[0]" C13;
+IO_LOC "LED[5]"       L16;
+IO_LOC "LED[4]"       L14;
+IO_LOC "LED[3]"       N14;
+IO_LOC "LED[2]"       N16;
+IO_LOC "LED[1]"       A13;
+IO_LOC "LED[0]"       C13;
 
 
 # UART
-IO_LOC "UART_TX" M11;
-IO_LOC "UART_RX" T13;
+IO_LOC "UART_TX"      M11;
+IO_LOC "UART_RX"      T13;
 
 
 # SWITCH
-IO_LOC "SW[3]" T5;
-IO_LOC "SW[2]" T4;
-IO_LOC "SW[1]" E8;
-IO_LOC "SW[0]" E9;
+IO_LOC "SW[3]"        T5;
+IO_LOC "SW[2]"        T4;
+IO_LOC "SW[1]"        E8;
+IO_LOC "SW[0]"        E9;
 
 
 # KEY
-IO_LOC "KEY[4]" C7;
-IO_LOC "KEY[3]" D7;
-IO_LOC "KEY[2]" T2;
-IO_LOC "KEY[1]" T3;
-IO_LOC "KEY[0]" T10;
+IO_LOC "KEY[4]"       C7;
+IO_LOC "KEY[3]"       D7;
+IO_LOC "KEY[2]"       T2;
+IO_LOC "KEY[1]"       T3;
+IO_LOC "KEY[0]"       T10;
 
+
+# HDMI
+IO_LOC "TMDS_CLK_P"   G16,H15;
+IO_LOC "TMDS_D_P[0]"  H14,H16;
+IO_LOC "TMDS_D_P[1]"  J15,K16;
+IO_LOC "TMDS_D_P[2]"  K14,K15;
 
 # GPIO
 # Not used yet, saved for later
