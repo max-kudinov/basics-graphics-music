@@ -1045,3 +1045,59 @@ AtxiJAOJKtlbmFYKYzSo0KIFkMLkEOZxB+P7QDcLiHxJT4OxhpxxnWUG1QOh27m2KvDJudwQ5y4B
 jjqNT+5cGAlaM6wsIw1SaZVr5h+juUbAdimNbcsOj+PCpzbPou62zHVo/Wyoza+RM6f5TObTndZ0
 66+7ze/CGWUqY0BCcfGYfFUvhb5qgTeiHcZ2cLfAp0gWMw==
 `pragma protect end_protected
+module DVI_TX_Top (
+  I_rst_n,
+  I_serial_clk,
+  I_rgb_clk,
+  I_rgb_vs,
+  I_rgb_hs,
+  I_rgb_de,
+  I_rgb_r,
+  I_rgb_g,
+  I_rgb_b,
+  O_tmds_clk_p,
+  O_tmds_clk_n,
+  O_tmds_data_p,
+  O_tmds_data_n
+)
+;
+input I_rst_n;
+input I_serial_clk;
+input I_rgb_clk;
+input I_rgb_vs;
+input I_rgb_hs;
+input I_rgb_de;
+input [7:0] I_rgb_r;
+input [7:0] I_rgb_g;
+input [7:0] I_rgb_b;
+output O_tmds_clk_p;
+output O_tmds_clk_n;
+output [2:0] O_tmds_data_p;
+output [2:0] O_tmds_data_n;
+wire VCC;
+wire GND;
+  \~rgb2dvi.DVI_TX_Top  rgb2dvi_inst (
+    .I_rgb_clk(I_rgb_clk),
+    .I_serial_clk(I_serial_clk),
+    .I_rst_n(I_rst_n),
+    .I_rgb_de(I_rgb_de),
+    .I_rgb_vs(I_rgb_vs),
+    .I_rgb_hs(I_rgb_hs),
+    .I_rgb_r(I_rgb_r[7:0]),
+    .I_rgb_g(I_rgb_g[7:0]),
+    .I_rgb_b(I_rgb_b[7:0]),
+    .O_tmds_clk_p(O_tmds_clk_p),
+    .O_tmds_clk_n(O_tmds_clk_n),
+    .O_tmds_data_p(O_tmds_data_p[2:0]),
+    .O_tmds_data_n(O_tmds_data_n[2:0])
+);
+  VCC VCC_cZ (
+    .V(VCC)
+);
+  GND GND_cZ (
+    .G(GND)
+);
+  GSR GSR (
+    .GSRI(VCC) 
+);
+endmodule /* DVI_TX_Top */
