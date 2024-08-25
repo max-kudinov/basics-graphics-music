@@ -177,7 +177,7 @@ module board_specific_top
 
     wire serial_clk;
 
-    Gowin_rPLL i_Gowin_rPLL
+    TMDS_rPLL i_Gowin_rPLL
     (
         .clkin  ( clk        ),
         .clkout ( serial_clk ),
