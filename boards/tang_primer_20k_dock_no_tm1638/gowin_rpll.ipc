@@ -1,7 +1,7 @@
 [General]
 ipc_version=4
-file=TMDS_rPLL
-module=TMDS_rPLL
+file=gowin_rpll
+module=Gowin_rPLL
 target_device=gw2a18c-011
 type=clock_rpll
 version=1.0
@@ -14,8 +14,8 @@ CLKOUTD=false
 CLKOUTP=false
 CLKOUT_BYPASS=false
 CLKOUT_DIVIDE_DYN=true
-CLKOUT_FREQ=371.25
-CLKOUT_TOLERANCE=0
+CLKOUT_FREQ=125.875
+CLKOUT_TOLERANCE=1
 DYNAMIC=true
 LANG=0
 LOCK_EN=true

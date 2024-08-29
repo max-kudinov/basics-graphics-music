@@ -48,7 +48,7 @@ module board_specific_top
     output [              2:0]  TMDS_D_P
 );
 
-    wire clk = CLK;
+    wire clk = pixel_clk;
 
     //------------------------------------------------------------------------
 
@@ -177,9 +177,9 @@ module board_specific_top
 
     wire serial_clk;
 
-    TMDS_rPLL i_Gowin_rPLL
+    Gowin_rPLL i_Gowin_rPLL
     (
-        .clkin  ( clk        ),
+        .clkin  ( CLK        ),
         .clkout ( serial_clk ),
         .lock   (            )
     );

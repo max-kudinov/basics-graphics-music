@@ -5,24 +5,24 @@ IO_LOC "CLK"          H11;
 
 
 # LED
-IO_LOC "LED[5]"       L16;
-IO_LOC "LED[4]"       L14;
-IO_LOC "LED[3]"       N14;
-IO_LOC "LED[2]"       N16;
-IO_LOC "LED[1]"       A13;
-IO_LOC "LED[0]"       C13;
+#IO_LOC "LED[5]"       L16;
+#IO_LOC "LED[4]"       L14;
+#IO_LOC "LED[3]"       N14;
+#IO_LOC "LED[2]"       N16;
+#IO_LOC "LED[1]"       A13;
+#IO_LOC "LED[0]"       C13;
 
 
 # UART
-IO_LOC "UART_TX"      M11;
-IO_LOC "UART_RX"      T13;
+#IO_LOC "UART_TX"      M11;
+#IO_LOC "UART_RX"      T13;
 
 
 # SWITCH
-IO_LOC "SW[3]"        T5;
-IO_LOC "SW[2]"        T4;
-IO_LOC "SW[1]"        E8;
-IO_LOC "SW[0]"        E9;
+#IO_LOC "SW[3]"        T5;
+#IO_LOC "SW[2]"        T4;
+#IO_LOC "SW[1]"        E8;
+#IO_LOC "SW[0]"        E9;
 
 
 # KEY
